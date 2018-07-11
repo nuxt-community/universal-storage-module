@@ -1,7 +1,7 @@
 {
-  "name": "nuxt-google-optimize",
-  "version": "0.3.1",
-  "description": "SSR friendly Google Optimize module for Nuxt.js",
+  "name": "nuxt-universal-storage",
+  "version": "0.0.0",
+  "description": "Universal Storage Utilities for Nuxt.js",
   "license": "MIT",
   "contributors": [
     {
@@ -9,7 +9,7 @@
     }
   ],
   "main": "lib/module.js",
-  "repository": "https://github.com/alibaba-aero/nuxt-google-optimize",
+  "repository": "https://github.com/alibaba-aero/nuxt-universal-storage",
   "publishConfig": {
     "access": "public"
   },
