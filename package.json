@@ -34,8 +34,7 @@
   },
   "dependencies": {
     "cookie": "^0.3.1",
-    "dotprop": "^1.0.2",
-    "js-cookie": "^2.2.0"
+    "dotprop": "^1.0.2"
   },
   "devDependencies": {
     "codecov": "latest",
