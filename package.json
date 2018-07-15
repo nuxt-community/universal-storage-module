@@ -6,6 +6,9 @@
   "contributors": [
     {
       "name": "Pooya Parsa <pooya@pi0.ir>"
+    },
+    {
+      "name": "Farzad Soltani <farzad.au@gmail.com>"
     }
   ],
   "main": "lib/module.js",

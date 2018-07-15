@@ -48,6 +48,12 @@ TODO
 - Start development server using `yarn run dev` or `npm run dev`
 - Point your browser to `http://localhost:3000`
 
+## Roadmap
+
+- Add Encryption
+- Complete Documents
+- Universal Session Handling
+
 ## License
 
 [MIT License](./LICENSE) - Alibaba Travels Co
