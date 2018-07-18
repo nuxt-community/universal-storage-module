@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.1.2"></a>
+## [0.1.2](https://github.com/alibaba-aero/nuxt-universal-storage/compare/v0.1.1...v0.1.2) (2018-07-18)
+
+
+### Bug Fixes
+
+* defaults ([df20d82](https://github.com/alibaba-aero/nuxt-universal-storage/commit/df20d82))
+
+
+
 <a name="0.1.1"></a>
 ## [0.1.1](https://github.com/alibaba-aero/nuxt-universal-storage/compare/v0.1.0...v0.1.1) (2018-07-15)
 
