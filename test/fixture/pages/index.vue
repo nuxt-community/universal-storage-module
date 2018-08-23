@@ -1,6 +1,6 @@
 <template>
 <div>
-  {{ $storage.state }}
+  {{ $store.state }}
 </div>
 </template>
 
