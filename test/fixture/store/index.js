@@ -1,4 +1,4 @@
-import VuexPersist from '@@/lib/vuex-persist'
+import { VuexPersist } from '@@'
 
 export const state = () => ({
 
