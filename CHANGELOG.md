@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.0"></a>
+# [0.2.0](https://github.com/alibaba-aero/nuxt-universal-storage/compare/v0.1.4...v0.2.0) (2019-02-13)
+
+
+### Features
+
+* add ignore exceptions ([#5](https://github.com/alibaba-aero/nuxt-universal-storage/issues/5)) ([b28d193](https://github.com/alibaba-aero/nuxt-universal-storage/commit/b28d193))
+
+
+
 <a name="0.1.4"></a>
 ## [0.1.4](https://github.com/alibaba-aero/nuxt-universal-storage/compare/v0.1.3...v0.1.4) (2018-08-11)
 
