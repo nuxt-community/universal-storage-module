@@ -39,7 +39,39 @@ npm install nuxt-universal-storage --save
 
 ## Usage
 
-TODO
+### Options
+
+Options are defined as following:
+```
+ storage: {
+  vuex, // boolean or {namespace} 
+  localStorage, // boolean or {prefix } 
+  cookie, // boolean or {prefix, options } 
+  initialState,  // Object {}
+  ignoreExceptions // 
+  }
+```
+and default to
+```  
+ {
+  vuex: {
+    namespace: 'storage'
+  },
+  cookie: {
+    prefix: '',
+    options: {
+      path: '/'
+    }
+  },
+  localStorage: {
+    prefix: ''
+  },
+  ignoreExceptions: false,
+}
+```
+  
+  
+  
 
 ## Development
 
