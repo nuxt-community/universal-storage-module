@@ -39,7 +39,54 @@ npm install nuxt-universal-storage --save
 
 ## Usage
 
-TODO
+### Options
+
+Options are defined as following:
+```js
+ storage: {
+  vuex, // boolean or {namespace} 
+  localStorage, // boolean or {prefix } 
+  cookie, // boolean or {prefix, options } 
+  initialState,  // Object {}
+  ignoreExceptions // 
+ }
+```
+and default to
+```js  
+ {
+  vuex: {
+    namespace: 'storage'
+  },
+  cookie: {
+    prefix: '',
+    options: {
+      path: '/'
+    }
+  },
+  localStorage: {
+    prefix: ''
+  },
+  ignoreExceptions: false,
+}
+```
+
+### Api 
+  
+* `$storage.getUniversal(key)`
+* `$storage.setUniversal(key, value)`
+* `$storage.syncUniversal(key, defaultValue)`
+* `$storage.removeUniversal(key)`
+* `$storage.getState(key)`
+* `$storage.setState(key, value)`
+* `$storage.removeState(key)`
+* `$storage.watchState(key, fn)`
+* `$storage.getLocalStorage(key)`
+* `$storage.setLocalStorage(key, value)`
+* `$storage.removeLocalStorage(key)`
+* `$storage.getCookies()`
+* `$storage.getCookie(key)`
+* `$storage.setCookie(key, value)`
+* `$storage.removeCookie(key)`
 
 ## Development
 
