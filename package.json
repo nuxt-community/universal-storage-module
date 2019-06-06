@@ -46,7 +46,7 @@
     "eslint-plugin-node": "latest",
     "eslint-plugin-promise": "latest",
     "eslint-plugin-standard": "latest",
-    "eslint-plugin-vue": "^4.7.1",
+    "eslint-plugin-vue": "^5.2.2",
     "jest": "^24.8.0",
     "jsdom": "^15.0.0",
     "nuxt-edge": "^2.0.0-25638738.d69b4b8",
