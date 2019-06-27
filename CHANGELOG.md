@@ -1,6 +1,16 @@
-# Change Log
+# Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+### [0.2.1](https://github.com/alibaba-aero/nuxt-universal-storage/compare/v0.2.0...v0.2.1) (2019-06-27)
+
+
+### Bug Fixes
+
+* add missing dependency ([#23](https://github.com/alibaba-aero/nuxt-universal-storage/issues/23)) ([762ebac](https://github.com/alibaba-aero/nuxt-universal-storage/commit/762ebac))
+* removeUniversal on ssr ([#25](https://github.com/alibaba-aero/nuxt-universal-storage/issues/25)) ([71f2857](https://github.com/alibaba-aero/nuxt-universal-storage/commit/71f2857))
+
+
 
 <a name="0.2.0"></a>
 # [0.2.0](https://github.com/alibaba-aero/nuxt-universal-storage/compare/v0.1.4...v0.2.0) (2019-02-13)
