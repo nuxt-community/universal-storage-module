@@ -12,6 +12,7 @@
     }
   ],
   "main": "lib/module.js",
+  "types": "types/index.d.ts",
   "repository": "https://github.com/alibaba-aero/nuxt-universal-storage",
   "publishConfig": {
     "access": "public"
@@ -26,7 +27,8 @@
     "lib/templates/*.*"
   ],
   "files": [
-    "lib"
+    "lib",
+    "types/*.d.ts"
   ],
   "jest": {
     "testEnvironment": "node",
