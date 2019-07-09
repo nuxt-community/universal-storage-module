@@ -35,6 +35,7 @@
     "collectCoverage": true
   },
   "dependencies": {
+    "@types/cookie": "^0.3.3",
     "cookie": "^0.4.0",
     "dotprop": "^1.2.0",
     "uri-js": "^4.2.2"
