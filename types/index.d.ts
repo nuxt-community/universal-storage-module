@@ -32,11 +32,17 @@ declare module '@nuxt/vue-app' {
   interface Context {
     $storage: NuxtStorage
   }
+  interface NuxtAppOptions {
+    $storage: NuxtStorage
+  }
 }
 
 // Nuxt 2.9+
 declare module '@nuxt/types' {
   interface Context {
+    $storage: NuxtStorage
+  }
+  interface NuxtAppOptions {
     $storage: NuxtStorage
   }
 }
