@@ -21,6 +21,6 @@ describe('basic', () => {
 
   test('render', async () => {
     let html = await get('/')
-    expect(html).toContain('Works!')
+    expect(html).toContain('{&quot;works&quot;:true}')
   })
 })

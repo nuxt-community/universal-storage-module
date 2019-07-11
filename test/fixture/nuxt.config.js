@@ -8,5 +8,10 @@ module.exports = {
   render: {
     resourceHints: false
   },
-  modules: ['@@']
+  plugins: [
+    '~/plugins/init.js'
+  ],
+  modules: [
+    '@@'
+  ]
 }
