@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-universal-storage",
+  "name": "@nuxtjs/universal-storage",
   "version": "0.3.1",
   "description": "Universal Storage Utilities for Nuxt.js",
   "license": "MIT",
@@ -13,7 +13,7 @@
   ],
   "main": "lib/module.js",
   "types": "types/index.d.ts",
-  "repository": "https://github.com/alibaba-aero/nuxt-universal-storage",
+  "repository": "https://github.com/nuxt-community/universal-storage",
   "publishConfig": {
     "access": "public"
   },
