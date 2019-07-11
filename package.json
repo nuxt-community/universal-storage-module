@@ -1,6 +1,6 @@
 {
   "name": "@nuxtjs/universal-storage",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "description": "Universal Storage Utilities for Nuxt.js",
   "license": "MIT",
   "contributors": [
