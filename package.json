@@ -13,7 +13,7 @@
   ],
   "main": "lib/module.js",
   "types": "types/index.d.ts",
-  "repository": "https://github.com/nuxt-community/universal-storage",
+  "repository": "https://github.com/nuxt-community/universal-storage-module",
   "publishConfig": {
     "access": "public"
   },
