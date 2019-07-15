@@ -1,6 +1,6 @@
 <template>
 <div>
-  {{ $storage.state }}
+  {{ JSON.stringify($storage.state) }}
 </div>
 </template>
 
