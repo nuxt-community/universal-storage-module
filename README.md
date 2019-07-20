@@ -70,8 +70,31 @@ and default to
 }
 ```
 
-### Api
+### Full synchronise on start with initialState as default
 
+Since version 0.4.0 this module allows full state synchronisation with cookies, localstorage and initialstate as a default value. That allows for a very neat usage pattern:
+For example, if I have an initialState like the following in Nuxt config:
+
+```
+  storage: {
+    initialState: { testParam: false }
+  }
+```
+then in my component I can simply declare (with decorators)
+```
+  @State(s => s.storage.testParam)
+  testParam
+```  
+or  (with mapState)
+```
+  computed: mapState({
+    testParam: s => s.storage.testParam
+    })
+```    
+then I get computed property `testParam` with whatever value it had on my last session and on change I just fire `this.$storage.setUniversal("testParam", newVal)` to get value saved
+
+### Api 
+  
 * `$storage.getUniversal(key)`
 * `$storage.setUniversal(key, value)`
 * `$storage.syncUniversal(key, defaultValue)`
