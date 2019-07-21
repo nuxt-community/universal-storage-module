@@ -42,7 +42,7 @@
   },
   "devDependencies": {
     "codecov": "latest",
-    "eslint": "^6.0.1",
+    "eslint": "^6.1.0",
     "eslint-config-standard": "latest",
     "eslint-plugin-import": "latest",
     "eslint-plugin-jest": "^22.12.0",
@@ -52,7 +52,7 @@
     "eslint-plugin-vue": "^5.2.3",
     "jest": "^24.8.0",
     "jsdom": "^15.1.1",
-    "nuxt-edge": "^2.9.0-26059691.e448e3c9",
+    "nuxt-edge": "^2.9.0-26061131.e448e3c9",
     "standard-version": "latest",
     "vue": "^2.6.10"
   }
