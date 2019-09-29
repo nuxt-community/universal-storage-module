@@ -42,7 +42,7 @@
   },
   "devDependencies": {
     "codecov": "latest",
-    "eslint": "^6.4.0",
+    "eslint": "^6.5.0",
     "eslint-config-standard": "latest",
     "eslint-plugin-import": "latest",
     "eslint-plugin-jest": "^22.17.0",
