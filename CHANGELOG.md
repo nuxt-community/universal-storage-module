@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.5.0](https://github.com/nuxt-community/universal-storage-module/compare/v0.4.0...v0.5.0) (2020-01-24)
+
+
+### Features
+
+* full sync on plugin initialization  ([#15](https://github.com/nuxt-community/universal-storage-module/issues/15)) ([b27e534](https://github.com/nuxt-community/universal-storage-module/commit/b27e534))
+
+
+### Tests
+
+* working test ([9f91fa7](https://github.com/nuxt-community/universal-storage-module/commit/9f91fa7))
+
+
+### BREAKING CHANGES
+
+* State will be fully synced on plugin initialization
+
+
+
 ## [0.4.0](https://github.com/nuxt-community/universal-storage-module/compare/v0.3.1...v0.4.0) (2019-07-11)
 
 
