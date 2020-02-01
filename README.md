@@ -91,7 +91,19 @@ or  (with mapState)
     testParam: s => s.storage.testParam
     })
 ```    
-then I get computed property `testParam` with whatever value it had on my last session and on change I just fire `this.$storage.setUniversal("testParam", newVal)` to get value saved
+then I get computed property `testParam` with whatever value it had on my last session and on change I just fire `this.$storage.setUniversal("testParam", newVal)` to get value saved.
+
+
+### Hidden settings (private state)
+ 
+>   Private state is suitable to keep information not being exposed to Vuex store
+>   This helps prevent stealing token from SSR response HTML
+   
+If key name starts with `_` then that  setting is kept in separate in memory storage and not exposed to Vuex store like the rest.
+For example:
+```js
+   $storage.setState("_password","alpha1")`
+```
 
 ### Api 
   
