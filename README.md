@@ -11,19 +11,21 @@
 
 [📖 **Release Notes**](./CHANGELOG.md)
 
-
 ## Setup
 
 - Add `@nuxtjs/universal-storage` dependency using yarn or npm to your project
+
 ```sh
 yarn add @nuxtjs/universal-storage
 ```
+
 OR
+
 ```sh
 npm install @nuxtjs/universal-storage --save
 ```
 
-- Add `@nuxtjs/universal-storage` to `modules` section of `nuxt.config.js`
+- Add `@nuxtjs/universal-storage` to the `modules` section of your `nuxt.config.js` file
 
 ```js
 {
@@ -42,6 +44,7 @@ npm install @nuxtjs/universal-storage --save
 ### Options
 
 Options are defined as following:
+
 ```js
  storage: {
   vuex, // boolean or {namespace}
@@ -51,7 +54,9 @@ Options are defined as following:
   ignoreExceptions //
  }
 ```
-and default to
+
+and default to the following values:
+
 ```js
  {
   vuex: {
@@ -73,55 +78,75 @@ and default to
 ### Full synchronise on start with initialState as default
 
 Since version 0.4.0 this module allows full state synchronisation with cookies, localstorage and initialstate as a default value. That allows for a very neat usage pattern:
-For example, if I have an initialState like the following in Nuxt config:
+For example, if you have an initialState like the following in your `nuxt.config.js` file:
 
-```
+```json
   storage: {
     initialState: { testParam: false }
   }
 ```
+
 then in my component I can simply declare (with decorators)
-```
+
+```js
   @State(s => s.storage.testParam)
   testParam
-```  
-or  (with mapState)
 ```
+
+or  (with mapState)
+
+```js
   computed: mapState({
     testParam: s => s.storage.testParam
-    })
-```    
-then I get computed property `testParam` with whatever value it had on my last session and on change I just fire `this.$storage.setUniversal("testParam", newVal)` to get value saved.
-
-
-### Hidden settings (private state)
- 
->   Private state is suitable to keep information not being exposed to Vuex store
->   This helps prevent stealing token from SSR response HTML
-   
-If key name starts with `_` then that  setting is kept in separate in memory storage and not exposed to Vuex store like the rest.
-For example:
-```js
-   $storage.setState("_password","alpha1")`
+  })
 ```
 
-### Api 
-  
-* `$storage.getUniversal(key)`
-* `$storage.setUniversal(key, value)`
-* `$storage.syncUniversal(key, defaultValue)`
-* `$storage.removeUniversal(key)`
-* `$storage.getState(key)`
-* `$storage.setState(key, value)`
-* `$storage.removeState(key)`
-* `$storage.watchState(key, fn)`
-* `$storage.getLocalStorage(key)`
-* `$storage.setLocalStorage(key, value)`
-* `$storage.removeLocalStorage(key)`
-* `$storage.getCookies()`
-* `$storage.getCookie(key)`
-* `$storage.setCookie(key, value)`
-* `$storage.removeCookie(key)`
+Afterwards you can get the computed property `testParam` with whatever value it had in your last session and on change you just have to call `this.$storage.setUniversal("testParam", newVal)` to get the new value saved.
+
+### Hidden settings (private state)
+
+> Private state is suitable to keep information not being exposed to the Vuex store.
+> This helps prevent stealing tokens from the SSR response HTML.
+
+If the key name starts with `_` then that value is kept separate in the memory storage and not exposed to the Vuex store like the rest of the values.
+
+For example:
+
+```js
+  $storage.setState("_password", "alpha1")
+```
+
+### Api
+
+- `$storage.getUniversal(key)`
+
+- `$storage.setUniversal(key, value)`
+
+- `$storage.syncUniversal(key, defaultValue)`
+
+- `$storage.removeUniversal(key)`
+
+- `$storage.getState(key)`
+
+- `$storage.setState(key, value)`
+
+- `$storage.removeState(key)`
+
+- `$storage.watchState(key, fn)`
+
+- `$storage.getLocalStorage(key)`
+
+- `$storage.setLocalStorage(key, value)`
+
+- `$storage.removeLocalStorage(key)`
+
+- `$storage.getCookies()`
+
+- `$storage.getCookie(key)`
+
+- `$storage.setCookie(key, value)`
+
+- `$storage.removeCookie(key)`
 
 ## Development
 
@@ -133,10 +158,8 @@ For example:
 ## Roadmap
 
 - Add Encryption
-- Complete Documents
 - Universal Session Handling
 
 ## License
 
 [MIT License](./LICENSE)
-
