@@ -80,7 +80,7 @@ and default to the following values:
 Since version 0.4.0 this module allows full state synchronisation with cookies, localstorage and initialstate as a default value. That allows for a very neat usage pattern:
 For example, if you have an initialState like the following in your `nuxt.config.js` file:
 
-```json
+```js
   storage: {
     initialState: { testParam: false }
   }
