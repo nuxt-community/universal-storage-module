@@ -48,7 +48,7 @@ Options are defined as following:
 ```js
  storage: {
   vuex, // boolean or {namespace}
-  localStorage, // boolean or {prefix }
+  localStorage, // boolean or {prefix, tabSync }
   cookie, // boolean or {prefix, options }
   initialState,  // Object {}
   ignoreExceptions //
@@ -69,7 +69,8 @@ and default to the following values:
     }
   },
   localStorage: {
-    prefix: ''
+    prefix: '',
+    tabSync: true
   },
   ignoreExceptions: false,
 }
@@ -125,6 +126,10 @@ For example:
 - `$storage.syncUniversal(key, defaultValue)`
 
 - `$storage.removeUniversal(key)`
+
+- `$storage.enableTabTrack(key)`
+
+- `$storage.disableTabTrack(key)`
 
 - `$storage.getState(key)`
 
