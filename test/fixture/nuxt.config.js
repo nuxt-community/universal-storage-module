@@ -12,6 +12,6 @@ module.exports = {
     '~/plugins/init.js'
   ],
   modules: [
-    '@@'
+    { handler: require('../../') }
   ]
 }
