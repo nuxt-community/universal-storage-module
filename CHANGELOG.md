@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.5](https://github.com/nuxt-community/universal-storage-module/compare/v0.5.4...v0.5.5) (2020-05-06)
+
+
+### Bug Fixes
+
+* **test:** change modules import ([0b174a8](https://github.com/nuxt-community/universal-storage-module/commit/0b174a8))
+
+
+
 ### [0.5.4](https://github.com/nuxt-community/universal-storage-module/compare/v0.5.3...v0.5.4) (2020-02-06)
 
 
