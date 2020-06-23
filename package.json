@@ -50,7 +50,7 @@
     "eslint-plugin-promise": "latest",
     "eslint-plugin-standard": "latest",
     "eslint-plugin-vue": "^6.2.2",
-    "jest": "^26.0.1",
+    "jest": "^26.1.0",
     "jsdom": "^16.2.2",
     "nuxt": "^2.13.0",
     "standard-version": "latest",
