@@ -38,7 +38,7 @@
     "@types/cookie": "^0.4.0",
     "cookie": "^0.4.1",
     "dotprop": "^1.2.0",
-    "uri-js": "^4.2.2"
+    "uri-js": "^4.4.0"
   },
   "devDependencies": {
     "codecov": "latest",
@@ -52,7 +52,7 @@
     "eslint-plugin-vue": "^6.2.2",
     "jest": "^26.4.2",
     "jsdom": "^16.4.0",
-    "nuxt": "^2.14.3",
+    "nuxt": "^2.14.4",
     "standard-version": "latest",
     "vue": "^2.6.12"
   }
