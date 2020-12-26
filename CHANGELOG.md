@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.6](https://github.com/nuxt-community/universal-storage-module/compare/v0.5.5...v0.5.6) (2020-12-26)
+
+
+### Bug Fixes
+
+* support cookie expires date object ([0c28fee](https://github.com/nuxt-community/universal-storage-module/commit/0c28feeb49f67864e45a9815323be16e70e33bed))
+
 ### [0.5.5](https://github.com/nuxt-community/universal-storage-module/compare/v0.5.4...v0.5.5) (2020-05-06)
 
 
