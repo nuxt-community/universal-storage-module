@@ -13,5 +13,14 @@ module.exports = {
   ],
   modules: [
     { handler: require('../../') }
-  ]
+  ],
+  storage: {
+    cookie: {
+      prefix: '',
+      options: {
+        path: '/',
+        expires: new Date()
+      }
+    }
+  }
 }
