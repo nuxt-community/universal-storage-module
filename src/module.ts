@@ -39,7 +39,7 @@ export default <Module<Config>> function module (moduleOptions) {
 
   this.addPlugin({
     src: require.resolve('./runtime/plugin'),
-    fileName: 'storage/plugin.js',
+    fileName: 'storage.js',
     options
   })
 
