@@ -1,1 +1,2 @@
-lib/plugin.js
+dist
+src/runtime/plugin.js

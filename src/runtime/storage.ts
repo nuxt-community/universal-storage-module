@@ -1,10 +1,17 @@
 import Vue from 'vue'
 import getProp from 'dotprop'
 import { parse as parseCookie, serialize as serializeCookie } from 'cookie'
+import type { NuxtStorage } from '../types'
 
 // Based on https://github.com/nuxt-community/auth-module/blob/dev/lib/core/storage.js
 
-export default class Storage {
+export class Storage implements NuxtStorage {
+  private ctx: any
+  private options: any
+  private _useVuex: boolean
+  private state: any
+  private _state: any
+
   constructor (ctx, options) {
     this.ctx = ctx
     this.options = options
@@ -99,7 +106,7 @@ export default class Storage {
     }
 
     // Synchronise initial values
-    for (let key in initData) {
+    for (const key in initData) {
       this.syncUniversal(key, initData[key])
     }
   }
@@ -107,15 +114,13 @@ export default class Storage {
   setState (key, value) {
     if (key[0] === '_') {
       Vue.set(this._state, key, value)
+    } else if (this._useVuex) {
+      this.ctx.store.commit(this.options.vuex.namespace + '/SET', {
+        key,
+        value
+      })
     } else {
-      if (this._useVuex) {
-        this.ctx.store.commit(this.options.vuex.namespace + '/SET', {
-          key,
-          value
-        })
-      } else {
-        Vue.set(this.state, key, value)
-      }
+      Vue.set(this.state, key, value)
     }
 
     return value
@@ -235,8 +240,8 @@ export default class Storage {
     return decodeValue(value)
   }
 
-  removeCookie (key, options) {
-    this.setCookie(key, undefined, Object.assign({ maxAge: -1 }, options))
+  removeCookie (key, options?) {
+    this.setCookie(key, undefined, { maxAge: -1, ...options })
   }
 }
 

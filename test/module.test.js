@@ -1,26 +1,14 @@
-const { Nuxt, Builder } = require('nuxt')
-const request = require('request-promise-native')
+import { setupTest, get } from '@nuxt/test-utils'
 
-const config = require('./fixture/nuxt.config')
-
-const url = path => `http://localhost:3000${path}`
-const get = path => request(url(path))
-
-describe('basic', () => {
-  let nuxt
-
-  beforeAll(async () => {
-    nuxt = new Nuxt(config)
-    await new Builder(nuxt).build()
-    await nuxt.listen(3000)
-  }, 60000)
-
-  afterAll(async () => {
-    await nuxt.close()
+describe('My test', () => {
+  setupTest({
+    configFile: 'nuxt.config.ts',
+    server: true
   })
 
-  test('render', async () => {
-    let html = await get('/')
-    expect(html).toContain('{&quot;works&quot;:true}')
+  it('renders state', async () => {
+    const { body } = await get('/')
+
+    expect(body).toContain('{&quot;works&quot;:true}')
   })
 })

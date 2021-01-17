@@ -1,4 +1,3 @@
-import Vue from 'vue'
 import { CookieSerializeOptions } from 'cookie'
 
 export interface NuxtStorage {

@@ -1,9 +1,9 @@
-import Storage from './storage'
+import { Storage } from '~storage'
 
 export default function nuxtUniversalStorage(ctx, inject) {
   let options = <%= JSON.stringify(options, null, 2) %>
   const cookie = <%= serialize(options.cookie) %>
-  
+
   options = {
     ...options,
     cookie
