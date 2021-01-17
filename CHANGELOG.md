@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.7](https://github.com/nuxt-community/universal-storage-module/compare/v0.5.6...v0.5.7) (2021-01-17)
+
+
+### Features
+
+* typescript rewrite ([971d5e3](https://github.com/nuxt-community/universal-storage-module/commit/971d5e360e44c842a621c616c5db749fa37b2215))
+
+
+### Bug Fixes
+
+* remove console.log ([#165](https://github.com/nuxt-community/universal-storage-module/issues/165)) ([d61dd13](https://github.com/nuxt-community/universal-storage-module/commit/d61dd139197b19547809b353038c7b6be7f92dd6))
+* set-cookie should be an array ([#167](https://github.com/nuxt-community/universal-storage-module/issues/167)) ([9fb9609](https://github.com/nuxt-community/universal-storage-module/commit/9fb9609e1af093628b30db81db8188fd514ff3f7))
+
 ### [0.5.6](https://github.com/nuxt-community/universal-storage-module/compare/v0.5.5...v0.5.6) (2020-12-26)
 
 
