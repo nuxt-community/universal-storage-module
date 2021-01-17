@@ -44,5 +44,5 @@ export default <Module<Config>> function module (moduleOptions) {
   })
 
   nuxt.options.alias['~storage'] = require.resolve('./runtime/storage')
-  nuxt.options.build.transpile.push(__dirname, '@nuxtjs/storage')
+  nuxt.options.build.transpile.push(__dirname, '@nuxtjs/universal-storage')
 }
