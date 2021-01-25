@@ -33,9 +33,8 @@ export default <Module<Config>> function module (moduleOptions) {
 
   const options: Options = defu({
     ...moduleOptions,
-    ...this.options.storage,
-    ...defaults
-  })
+    ...this.options.storage
+  }, defaults)
 
   this.addPlugin({
     src: require.resolve('./runtime/plugin'),
