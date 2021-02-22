@@ -24,10 +24,10 @@
     "uri-js": "^4.4.1"
   },
   "devDependencies": {
-    "@babel/preset-typescript": "^7.12.16",
+    "@babel/preset-typescript": "^7.12.17",
     "@nuxt/test-utils": "latest",
     "@nuxt/types": "latest",
-    "@nuxt/typescript-build": "^2.0.4",
+    "@nuxt/typescript-build": "^2.0.5",
     "@nuxtjs/eslint-config-typescript": "latest",
     "@types/cookie": "latest",
     "codecov": "latest",
