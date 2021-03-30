@@ -27,7 +27,7 @@
     "@babel/preset-typescript": "^7.13.0",
     "@nuxt/test-utils": "latest",
     "@nuxt/types": "latest",
-    "@nuxt/typescript-build": "^2.0.5",
+    "@nuxt/typescript-build": "^2.1.0",
     "@nuxtjs/eslint-config-typescript": "latest",
     "@types/cookie": "latest",
     "codecov": "latest",
