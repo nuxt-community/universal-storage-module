@@ -31,11 +31,7 @@ declare module '@nuxt/types' {
 export default <Module<Config>> function module (moduleOptions) {
   const { nuxt } = this
 
-  const options: Options = defu({
-    ...moduleOptions,
-    ...this.options.storage,
-    ...defaults
-  })
+  const options: DeepPartial<Options> = defu(moduleOptions, { ...this.options.storage }, defaults)
 
   this.addPlugin({
     src: require.resolve('./runtime/plugin'),
