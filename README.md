@@ -1,11 +1,11 @@
 # Nuxt Universal Storage Module
 
-[![npm (scoped with tag)](https://img.shields.io/npm/v/@nuxtjs/universal-storage/latest.svg?style=flat-square)](https://npmjs.com/package/@nuxtjs/universal-storage)
-[![npm](https://img.shields.io/npm/dt/@nuxtjs/universal-storage.svg?style=flat-square)](https://npmjs.com/package/@nuxtjs/universal-storage)
-[![CircleCI](https://img.shields.io/circleci/project/github/nuxt-community/universal-storage-module.svg?style=flat-square)](https://circleci.com/gh/nuxt-community/universal-storage-module)
-[![Codecov](https://img.shields.io/codecov/c/github/nuxt-community/universal-storage-module.svg?style=flat-square)](https://codecov.io/gh/nuxt-community/universal-storage-module)
-[![Dependencies](https://david-dm.org/nuxt-community/universal-storage-module/status.svg?style=flat-square)](https://david-dm.org/nuxt-community/universal-storage-module)
-[![js-standard-style](https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=flat-square)](http://standardjs.com)
+[![npm (scoped with tag)](https://img.shields.io/npm/v/@nuxtjs/universal-storage/latest.svg)](https://npmjs.com/package/@nuxtjs/universal-storage)
+[![npm](https://img.shields.io/npm/dt/@nuxtjs/universal-storage.svg)](https://npmjs.com/package/@nuxtjs/universal-storage)
+[![GitHub Actions](https://github.com/nuxt-community/universal-storage-module/actions/workflows/ci.yml/badge.svg)](https://circleci.com/gh/nuxt-community/universal-storage-module)
+[![Codecov](https://img.shields.io/codecov/c/github/nuxt-community/universal-storage-module.svg)](https://codecov.io/gh/nuxt-community/universal-storage-module)
+[![Dependencies](https://david-dm.org/nuxt-community/universal-storage-module/status.svg)](https://david-dm.org/nuxt-community/universal-storage-module)
+[![js-standard-style](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](http://standardjs.com)
 
 > Universal Storage Utilities for Nuxt.js based on [@nuxt-community/auth-module](https://github.com/nuxt-community/auth-module)
 
@@ -48,8 +48,8 @@ Options are defined as following:
 ```js
  storage: {
   vuex, // boolean or {namespace}
-  localStorage, // boolean or {prefix }
-  cookie, // boolean or {prefix, options }
+  localStorage, // boolean or {prefix}
+  cookie, // boolean or {prefix, options}
   initialState,  // Object {}
   ignoreExceptions //
  }
@@ -77,8 +77,8 @@ and default to the following values:
 
 ### Full synchronise on start with initialState as default
 
-Since version 0.4.0 this module allows full state synchronisation with cookies, localstorage and initialstate as a default value. That allows for a very neat usage pattern:
-For example, if you have an initialState like the following in your `nuxt.config.js` file:
+Since version 0.4.0 this module allows full state synchronisation with `cookies`, `localStorage` and `initialState` as a default value. That allows for a very neat usage pattern:
+For example, if you have an `initialState` like the following in your `nuxt.config.js` file:
 
 ```js
   storage: {
@@ -93,7 +93,7 @@ then in my component I can simply declare (with decorators)
   testParam
 ```
 
-or  (with mapState)
+or (with mapState)
 
 ```js
   computed: mapState({
