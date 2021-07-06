@@ -39,6 +39,21 @@ npm install @nuxtjs/universal-storage --save
 }
 ```
 
+## TypeScript
+
+Add the types to your "types" array in `tsconfig.json`
+
+```json
+{
+  "compilerOptions": {
+    "types": [
+      "@nuxt/types",
+      "@nuxtjs/universal-storage"
+    ]
+  }
+}
+```
+
 ## Usage
 
 ### Options
