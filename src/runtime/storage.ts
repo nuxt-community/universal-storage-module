@@ -220,9 +220,9 @@ export class Storage implements NuxtStorage {
       document.cookie = serializedCookie
     } else if (process.server && this.ctx.res) {
       // Send Set-Cookie header from server side
-      const existingCookies = this.ctx.res.getHeader('Set-Cookie')
+      const existingCookies = this.ctx.res.getHeader('Set-Cookie') || []
       const cookies = Array.isArray(existingCookies)
-        ? [...existingCookies, serializedCookie]
+        ? existingCookies.push(serializedCookie)
         : [existingCookies, serializedCookie]
       this.ctx.res.setHeader('Set-Cookie', cookies)
     }
