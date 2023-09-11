@@ -1,4 +1,4 @@
-# Nuxt Universal Storage Module
+# Nuxt 2 Universal Storage Module
 
 [![npm (scoped with tag)](https://img.shields.io/npm/v/@nuxtjs/universal-storage/latest.svg)](https://npmjs.com/package/@nuxtjs/universal-storage)
 [![npm](https://img.shields.io/npm/dt/@nuxtjs/universal-storage.svg)](https://npmjs.com/package/@nuxtjs/universal-storage)
@@ -7,7 +7,7 @@
 [![Dependencies](https://david-dm.org/nuxt-community/universal-storage-module/status.svg)](https://david-dm.org/nuxt-community/universal-storage-module)
 [![js-standard-style](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](http://standardjs.com)
 
-> Universal Storage Utilities for Nuxt.js based on [@nuxt-community/auth-module](https://github.com/nuxt-community/auth-module)
+> Universal Storage Utilities for Nuxt 2 based on [@nuxt-community/auth-module](https://github.com/nuxt-community/auth-module)
 
 [📖 **Release Notes**](./CHANGELOG.md)
 
