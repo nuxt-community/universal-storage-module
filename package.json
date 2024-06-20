@@ -19,7 +19,7 @@
   "dependencies": {
     "cookie": "^0.5.0",
     "defu": "^6.1.2",
-    "dotprop": "^1.2.1",
+    "dotprop": "^2.0.0",
     "upath": "^2.0.1",
     "uri-js": "^4.4.1"
   },

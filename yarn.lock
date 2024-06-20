@@ -4738,10 +4738,10 @@ dotgitignore@^2.1.0:
     find-up "^3.0.0"
     minimatch "^3.0.4"
 
-dotprop@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/dotprop/-/dotprop-1.2.1.tgz#7df88dd1c50ae4e93773475f85c84f77c302953b"
-  integrity sha512-TcgsqnhHYytg+JKusKAwe4YLZWtD/vfOmblUEbSDZxQy1nlOQTChbyvj/f6kqKLUYbcJqie97rVhDc1JBs00LA==
+dotprop@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/dotprop/-/dotprop-2.0.0.tgz#6e0905c08e21d563aec2fbc0d5a5ab0f4ffcfd77"
+  integrity sha512-f2nFl9Uf8E9o7qzvZxV7/k/OCWNrgY7To72QYvz27Jy0P45IU5lyVT1EP+IsLNxHp0+3gcQ/PNrqfYwsnG7cKQ==
 
 duplexer@^0.1.1:
   version "0.1.2"
