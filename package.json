@@ -17,7 +17,7 @@
     "test": "npm run lint && jest"
   },
   "dependencies": {
-    "cookie": "^0.5.0",
+    "cookie": "^1.0.1",
     "defu": "^6.1.2",
     "dotprop": "^1.2.1",
     "upath": "^2.0.1",
