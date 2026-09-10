@@ -24,7 +24,7 @@
     "uri-js": "^4.4.1"
   },
   "devDependencies": {
-    "@babel/preset-typescript": "^7.22.15",
+    "@babel/preset-typescript": "^8.0.1",
     "@nuxt/test-utils": "latest",
     "@nuxt/types": "latest",
     "@nuxt/typescript-build": "^3.0.1",
