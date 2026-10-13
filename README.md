@@ -1,3 +1,6 @@
+> [!NOTE]
+> This repository is archived. `@nuxtjs/universal-storage` was built for Nuxt 2, which reached end of life on June 30, 2024.
+
 # Nuxt 2 Universal Storage Module
 
 [![npm (scoped with tag)](https://img.shields.io/npm/v/@nuxtjs/universal-storage/latest.svg)](https://npmjs.com/package/@nuxtjs/universal-storage)
